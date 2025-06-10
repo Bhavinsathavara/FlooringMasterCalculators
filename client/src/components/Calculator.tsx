@@ -1,6 +1,10 @@
 import { ReactNode } from 'react';
+import { Link } from 'wouter';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import SEOHead from './SEOHead';
+import Breadcrumb from './Breadcrumb';
+import { calculators, getCalculatorsByCategory } from '@/lib/calculatorData';
 
 interface CalculatorProps {
   title: string;
@@ -9,6 +13,7 @@ interface CalculatorProps {
   metaDescription: string;
   keywords?: string[];
   children: ReactNode;
+  category?: 'basic' | 'materials' | 'advanced';
 }
 
 export default function Calculator({ 
@@ -17,7 +22,8 @@ export default function Calculator({
   metaTitle, 
   metaDescription, 
   keywords, 
-  children 
+  children,
+  category = 'basic'
 }: CalculatorProps) {
   return (
     <>
@@ -29,6 +35,12 @@ export default function Calculator({
       
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb Navigation */}
+          <Breadcrumb items={[
+            { label: 'Calculators', href: '/' },
+            { label: title }
+          ]} />
+          
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{title}</h1>
@@ -111,6 +123,39 @@ export default function Calculator({
                     <p className="text-gray-600 text-sm">Minimize waste and reduce project costs.</p>
                   </div>
                 </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Related Calculators Section */}
+          <Card className="mt-8 bg-white shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-xl font-bold text-gray-900">Related Calculators</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {getCalculatorsByCategory(category).slice(0, 6).map((calc) => (
+                  <Link key={calc.id} href={calc.route}>
+                    <Card className="h-full hover:shadow-md transition-shadow cursor-pointer border border-gray-200 hover:border-primary">
+                      <CardContent className="p-4">
+                        <div className="flex items-center space-x-3">
+                          <div className="text-2xl">{calc.icon}</div>
+                          <div>
+                            <h4 className="font-medium text-gray-900 text-sm">{calc.title}</h4>
+                            <p className="text-xs text-gray-600 mt-1">{calc.description}</p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+              <div className="text-center mt-6">
+                <Link href="/">
+                  <Button variant="outline" className="bg-primary text-white hover:bg-blue-700">
+                    View All Calculators
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
