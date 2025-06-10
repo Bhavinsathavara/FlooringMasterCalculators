@@ -57,6 +57,7 @@ function Router() {
           <Route path="/calculator/stone" component={StoneFlooringCalculator} />
           <Route path="/calculator/room-shape" component={RoomShapeCalculator} />
           <Route path="/calculator/bamboo" component={BambooFlooringCalculator} />
+          <Route path="/calculator/cork" component={CorkFlooringCalculator} />
           <Route path="/calculator/subfloor" component={SubfloorCalculator} />
           <Route path="/calculator/hardwood" component={HardwoodCalculator} />
           

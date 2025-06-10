@@ -108,8 +108,32 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://flooringcalc.pro/calculator/tile-grout</loc>
-    <lastmod>2024-06-10</lastmod>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/cork</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/epoxy</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/concrete</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/baseboard</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/subfloor</loc>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
