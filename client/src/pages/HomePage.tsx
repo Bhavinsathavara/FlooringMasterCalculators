@@ -189,14 +189,22 @@ export default function HomePage() {
               ))}
 
               {/* More Calculators Card */}
-              <Card className="calculator-card bg-white shadow-lg border border-gray-200 fade-in">
+              <Card className="calculator-card bg-gradient-to-br from-primary to-blue-700 text-white shadow-lg border border-gray-200 fade-in">
                 <CardContent className="p-6">
                   <div className="text-center py-8">
-                    <Plus className="text-4xl text-gray-400 mb-4 mx-auto" size={48} />
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">35+ More Calculators</h3>
-                    <p className="text-gray-600 mb-4">Including carpet, stone, concrete, cork, bamboo, and specialized tools</p>
-                    <Button variant="ghost" className="text-primary font-semibold hover:text-blue-700">
-                      View All Calculators <ArrowRight className="ml-1" size={16} />
+                    <Plus className="text-4xl text-blue-200 mb-4 mx-auto" size={48} />
+                    <h3 className="text-xl font-bold mb-2">40+ Professional Tools</h3>
+                    <p className="text-blue-100 mb-4">Complete calculator suite for every flooring project type</p>
+                    <div className="grid grid-cols-2 gap-2 text-xs text-blue-100 mb-4">
+                      <div>• Stone & Marble</div>
+                      <div>• Carpet & Rugs</div>
+                      <div>• Concrete & Epoxy</div>
+                      <div>• Cork & Bamboo</div>
+                      <div>• Trim & Molding</div>
+                      <div>• Subfloor & Prep</div>
+                    </div>
+                    <Button variant="ghost" className="text-white border-white hover:bg-white hover:text-primary">
+                      Explore All Tools <ArrowRight className="ml-1" size={16} />
                     </Button>
                   </div>
                 </CardContent>

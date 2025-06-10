@@ -15,6 +15,7 @@ import VinylCalculator from "@/pages/calculators/VinylCalculator";
 import InstallationCostCalculator from "@/pages/calculators/InstallationCostCalculator";
 import MaterialQuantityCalculator from "@/pages/calculators/MaterialQuantityCalculator";
 import LaborCostCalculator from "@/pages/calculators/LaborCostCalculator";
+import RoomAreaCalculator from "@/pages/calculators/RoomAreaCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -33,6 +34,7 @@ function Router() {
           <Route path="/calculator/waste-percentage" component={WastePercentageCalculator} />
           <Route path="/calculator/material-quantity" component={MaterialQuantityCalculator} />
           <Route path="/calculator/labor-cost" component={LaborCostCalculator} />
+          <Route path="/calculator/room-area" component={RoomAreaCalculator} />
           <Route path="/calculator/tile" component={TileCalculator} />
           <Route path="/calculator/hardwood" component={HardwoodCalculator} />
           <Route path="/calculator/vinyl" component={VinylCalculator} />
