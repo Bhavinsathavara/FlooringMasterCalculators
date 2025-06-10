@@ -31,7 +31,6 @@ export default function Calculator({
         title={metaTitle}
         description={metaDescription}
         keywords={keywords}
-        canonical={`https://flooringmastercalculators.netlify.app${window.location.pathname}`}
       />
       
       <div className="min-h-screen bg-gray-50 py-8">

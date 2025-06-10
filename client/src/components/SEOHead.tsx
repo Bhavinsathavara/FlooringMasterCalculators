@@ -9,8 +9,8 @@ interface SEOHeadProps {
 
 export default function SEOHead({ title, description, keywords, canonical }: SEOHeadProps) {
   useEffect(() => {
-    // Determine canonical URL early
-    const canonicalUrl = canonical || `https://flooringmastercalculators.netlify.app${window.location.pathname}`;
+    // Determine canonical URL early - self-referencing
+    const canonicalUrl = canonical || `${window.location.origin}${window.location.pathname}`;
     
     // Update title
     document.title = title;
