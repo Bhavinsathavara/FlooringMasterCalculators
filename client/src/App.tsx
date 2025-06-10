@@ -24,6 +24,8 @@ import ConcreteFlooringCalculator from "@/pages/calculators/ConcreteFlooringCalc
 import BaseboardTrimCalculator from "@/pages/calculators/BaseboardTrimCalculator";
 import StoneFlooringCalculator from "@/pages/calculators/StoneFlooringCalculator";
 import RoomShapeCalculator from "@/pages/calculators/RoomShapeCalculator";
+import BambooFlooringCalculator from "@/pages/calculators/BambooFlooringCalculator";
+import SubfloorCalculator from "@/pages/calculators/SubfloorCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -53,6 +55,8 @@ function Router() {
           <Route path="/calculator/vinyl" component={VinylCalculator} />
           <Route path="/calculator/stone" component={StoneFlooringCalculator} />
           <Route path="/calculator/room-shape" component={RoomShapeCalculator} />
+          <Route path="/calculator/bamboo" component={BambooFlooringCalculator} />
+          <Route path="/calculator/subfloor" component={SubfloorCalculator} />
           <Route path="/calculator/hardwood" component={HardwoodCalculator} />
           
           {/* Fallback to 404 */}
