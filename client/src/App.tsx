@@ -16,6 +16,8 @@ import InstallationCostCalculator from "@/pages/calculators/InstallationCostCalc
 import MaterialQuantityCalculator from "@/pages/calculators/MaterialQuantityCalculator";
 import LaborCostCalculator from "@/pages/calculators/LaborCostCalculator";
 import RoomAreaCalculator from "@/pages/calculators/RoomAreaCalculator";
+import TileAdhesiveCalculator from "@/pages/calculators/TileAdhesiveCalculator";
+import CarpetCalculator from "@/pages/calculators/CarpetCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -36,6 +38,8 @@ function Router() {
           <Route path="/calculator/labor-cost" component={LaborCostCalculator} />
           <Route path="/calculator/room-area" component={RoomAreaCalculator} />
           <Route path="/calculator/tile" component={TileCalculator} />
+          <Route path="/calculator/tile-adhesive" component={TileAdhesiveCalculator} />
+          <Route path="/calculator/carpet" component={CarpetCalculator} />
           <Route path="/calculator/hardwood" component={HardwoodCalculator} />
           <Route path="/calculator/vinyl" component={VinylCalculator} />
           
