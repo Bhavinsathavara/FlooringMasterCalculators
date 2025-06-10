@@ -192,10 +192,10 @@
   
   <!-- Installation & Accessories -->
   <url>
-    <loc>https://flooringcalc.pro/calculator/baseboard-trim</loc>
-    <lastmod>2024-06-10</lastmod>
+    <loc>https://flooringcalc.pro/calculator/baseboard</loc>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringcalc.pro/calculator/floor-leveling</loc>

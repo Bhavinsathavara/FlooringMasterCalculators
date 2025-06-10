@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import CalculatorCard from '@/components/CalculatorCard';
 import SEOHead from '@/components/SEOHead';
 import { calculators, getCalculatorsByCategory } from '@/lib/calculatorData';
+import QuickNav from '@/components/QuickNav';
 
 export default function HomePage() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -163,6 +164,9 @@ export default function HomePage() {
                 Professional-grade calculators for every flooring project. From basic square footage to complex pattern layouts.
               </p>
             </div>
+
+            {/* Quick Navigation for Popular Calculators */}
+            <QuickNav />
 
             {/* Category Filter */}
             <div className="flex flex-wrap justify-center gap-3 mb-12">
