@@ -22,6 +22,8 @@ import EpoxyFlooringCalculator from "@/pages/calculators/EpoxyFlooringCalculator
 import LaminateCalculator from "@/pages/calculators/LaminateCalculator";
 import ConcreteFlooringCalculator from "@/pages/calculators/ConcreteFlooringCalculator";
 import BaseboardTrimCalculator from "@/pages/calculators/BaseboardTrimCalculator";
+import StoneFlooringCalculator from "@/pages/calculators/StoneFlooringCalculator";
+import RoomShapeCalculator from "@/pages/calculators/RoomShapeCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -48,8 +50,10 @@ function Router() {
           <Route path="/calculator/laminate" component={LaminateCalculator} />
           <Route path="/calculator/concrete" component={ConcreteFlooringCalculator} />
           <Route path="/calculator/baseboard" component={BaseboardTrimCalculator} />
-          <Route path="/calculator/hardwood" component={HardwoodCalculator} />
           <Route path="/calculator/vinyl" component={VinylCalculator} />
+          <Route path="/calculator/stone" component={StoneFlooringCalculator} />
+          <Route path="/calculator/room-shape" component={RoomShapeCalculator} />
+          <Route path="/calculator/hardwood" component={HardwoodCalculator} />
           
           {/* Fallback to 404 */}
           <Route component={NotFound} />
