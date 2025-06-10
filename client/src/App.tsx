@@ -26,6 +26,7 @@ import StoneFlooringCalculator from "@/pages/calculators/StoneFlooringCalculator
 import RoomShapeCalculator from "@/pages/calculators/RoomShapeCalculator";
 import BambooFlooringCalculator from "@/pages/calculators/BambooFlooringCalculator";
 import SubfloorCalculator from "@/pages/calculators/SubfloorCalculator";
+import CorkFlooringCalculator from "@/pages/calculators/CorkFlooringCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
