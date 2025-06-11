@@ -280,6 +280,24 @@ export default function SquareFootageCalculator() {
       metaTitle="Square Footage Calculator - Room Area Calculator | FlooringCalc Pro"
       metaDescription="Calculate room square footage for any shape - rectangular, L-shaped, circular rooms. Professional room area calculator with instant results."
       keywords={['square footage calculator', 'room area calculator', 'floor area calculator', 'room size calculator']}
+      faqs={[
+        {
+          question: "How do I measure an irregular shaped room?",
+          answer: "Break irregular rooms into basic shapes (rectangles, triangles, circles). Measure each section separately, calculate their areas, then add them together. For L-shaped rooms, use our L-shape calculator option."
+        },
+        {
+          question: "What's the difference between square feet and square yards?",
+          answer: "1 square yard = 9 square feet. To convert: divide square feet by 9 for square yards, or multiply square yards by 9 for square feet. Carpet is often sold by square yards, while most other flooring uses square feet."
+        },
+        {
+          question: "Do I need to subtract area for doorways and built-ins?",
+          answer: "Subtract large permanent fixtures like kitchen islands or built-in cabinets. Don't subtract doorways, small closets, or areas under 10 sq ft - the extra material accounts for waste and future repairs."
+        },
+        {
+          question: "How accurate should my measurements be?",
+          answer: "Measure to the nearest 1/4 inch for best results. Use a quality tape measure and double-check all measurements. For large rooms, consider thermal expansion - measure at room temperature."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

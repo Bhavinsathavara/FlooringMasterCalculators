@@ -6,6 +6,7 @@ import SEOHead from './SEOHead';
 import Breadcrumb from './Breadcrumb';
 import SEOBreadcrumb from './SEOBreadcrumb';
 import FAQSection from './FAQSection';
+import StructuredData from './StructuredData';
 import LoadingOverlay from './LoadingOverlay';
 import { calculators, getCalculatorsByCategory } from '@/lib/calculatorData';
 

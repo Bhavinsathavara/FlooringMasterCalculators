@@ -43,6 +43,24 @@ export default function WastePercentageCalculator() {
       metaTitle="Flooring Waste Calculator - Material Waste Percentage | FlooringCalc Pro"
       metaDescription="Calculate optimal flooring waste percentage for your project. Reduce material costs and minimize over-ordering with precise calculations."
       keywords={['flooring waste calculator', 'material waste percentage', 'flooring overage calculator', 'waste factor calculator']}
+      faqs={[
+        {
+          question: "What is the standard waste percentage for flooring?",
+          answer: "Standard waste percentages: Tile 10-15%, Hardwood 10-15%, Vinyl/Laminate 5-10%, Carpet 10%, Stone 15-20%. Complex rooms or diagonal patterns require 15-25% additional waste allowance."
+        },
+        {
+          question: "Why do I need extra flooring material?",
+          answer: "Extra material accounts for cutting waste, defective pieces, future repairs, and installation errors. Pattern matching, diagonal layouts, and irregular rooms increase waste significantly."
+        },
+        {
+          question: "How does room complexity affect waste percentage?",
+          answer: "Simple rectangular rooms: 5-10% waste. Moderate complexity (few obstacles): 10-15%. Complex rooms (many angles, islands): 15-25%. Each additional cut increases waste."
+        },
+        {
+          question: "Should I order extra for future repairs?",
+          answer: "Yes, order 5-10% extra for future repairs and dye lot matching. Store leftover material in a dry location. Different production runs may not match exactly."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

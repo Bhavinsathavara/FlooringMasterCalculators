@@ -269,6 +269,24 @@ export default function AreaRugCalculator() {
       metaTitle="Area Rug Size Calculator - Rug Size Guide | FlooringCalc Pro"
       metaDescription="Calculate optimal area rug sizes for any room layout. Professional rug size calculator with furniture placement guidelines."
       keywords={['area rug calculator', 'rug size calculator', 'area rug size guide', 'room rug calculator']}
+      faqs={[
+        {
+          question: "How do I choose the right rug size for my room?",
+          answer: "Living room: Front legs of furniture should sit on the rug. Dining room: Rug should extend 24-30\" beyond table edges. Bedroom: 8x10 for queen beds, 9x12 for king beds. Ensure rug anchors the space."
+        },
+        {
+          question: "Should all furniture legs be on the area rug?",
+          answer: "Ideally yes, but it's acceptable to have front legs only on the rug in living rooms. Avoid having just one or two furniture legs on the rug as this creates an unbalanced look."
+        },
+        {
+          question: "What's the minimum space between rug edge and wall?",
+          answer: "Leave 18-24 inches between rug edge and wall in larger rooms, 8-12 inches in smaller spaces. This prevents the rug from looking cramped and allows the room to breathe visually."
+        },
+        {
+          question: "Can I layer area rugs for better design?",
+          answer: "Yes, layering creates visual interest. Use a larger neutral rug as base with a smaller patterned rug on top. Ensure at least 18\" of the base rug shows around the smaller one."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

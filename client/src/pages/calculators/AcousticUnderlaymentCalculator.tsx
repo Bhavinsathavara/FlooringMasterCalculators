@@ -105,6 +105,24 @@ export default function AcousticUnderlaymentCalculator() {
       metaTitle="Acoustic Underlayment Calculator - Sound Barrier Calculator | FlooringCalc Pro"
       metaDescription="Calculate acoustic underlayment for sound reduction. Professional sound barrier calculator for laminate, hardwood, and vinyl flooring."
       keywords={['acoustic underlayment calculator', 'sound barrier calculator', 'noise reduction flooring']}
+      faqs={[
+        {
+          question: "How much sound reduction can acoustic underlayment provide?",
+          answer: "Quality acoustic underlayment can reduce impact noise by 15-25 dB and airborne sound by 5-10 dB. Thicker materials (6mm+) with high-density cores provide better sound dampening performance."
+        },
+        {
+          question: "What's the difference between acoustic and regular underlayment?",
+          answer: "Acoustic underlayment uses dense materials like rubber or cork specifically designed for sound absorption. Regular foam underlayment provides minimal sound reduction compared to specialized acoustic products."
+        },
+        {
+          question: "Do I need acoustic underlayment in single-story homes?",
+          answer: "Yes, acoustic underlayment reduces sound transmission to adjacent rooms and dampens footstep noise within the same level. It's especially beneficial in open floor plans and homes with hard surface flooring."
+        },
+        {
+          question: "Can I install acoustic underlayment under any flooring type?",
+          answer: "Most acoustic underlayments work with floating floors (laminate, LVP, engineered wood). For glue-down or nail-down installations, use specialized acoustic products designed for those methods."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
