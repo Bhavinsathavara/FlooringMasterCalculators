@@ -33,6 +33,13 @@ import SheetVinylCalculator from "@/pages/calculators/SheetVinylCalculator";
 import LinoleumCalculator from "@/pages/calculators/LinoleumCalculator";
 import AreaRugCalculator from "@/pages/calculators/AreaRugCalculator";
 import GarageFloorCalculator from "@/pages/calculators/GarageFloorCalculator";
+import RubberFlooringCalculator from "@/pages/calculators/RubberFlooringCalculator";
+import ParquetLayoutCalculator from "@/pages/calculators/ParquetLayoutCalculator";
+import FloatingFloorGapCalculator from "@/pages/calculators/FloatingFloorGapCalculator";
+import StairCalculator from "@/pages/calculators/StairCalculator";
+import UnlevelFloorCalculator from "@/pages/calculators/UnlevelFloorCalculator";
+import RadiantHeatingCalculator from "@/pages/calculators/RadiantHeatingCalculator";
+import AcousticUnderlaymentCalculator from "@/pages/calculators/AcousticUnderlaymentCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -71,6 +78,9 @@ function Router() {
           <Route path="/calculator/linoleum" component={LinoleumCalculator} />
           <Route path="/calculator/area-rug" component={AreaRugCalculator} />
           <Route path="/calculator/garage-floor" component={GarageFloorCalculator} />
+          <Route path="/calculator/rubber-flooring" component={RubberFlooringCalculator} />
+          <Route path="/calculator/parquet" component={ParquetLayoutCalculator} />
+          <Route path="/calculator/floating-floor-gap" component={FloatingFloorGapCalculator} />
           
           {/* Demo Pages */}
           <Route path="/demo/loading-animations" component={LoadingDemoPage} />
