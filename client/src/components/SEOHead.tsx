@@ -179,6 +179,29 @@ export default function SEOHead({ title, description, keywords, canonical, type 
       document.head.appendChild(robots);
     }
 
+    // Add googlebot meta
+    let googlebot = document.querySelector('meta[name="googlebot"]');
+    if (!googlebot) {
+      googlebot = document.createElement('meta');
+      googlebot.setAttribute('name', 'googlebot');
+      googlebot.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+      document.head.appendChild(googlebot);
+    }
+
+    // Add language meta
+    let language = document.querySelector('meta[http-equiv="content-language"]');
+    if (!language) {
+      language = document.createElement('meta');
+      language.setAttribute('http-equiv', 'content-language');
+      language.setAttribute('content', 'en-US');
+      document.head.appendChild(language);
+    }
+
+    // Update page title in document
+    if (document.title !== title) {
+      document.title = title;
+    }
+
   }, [title, description, keywords, canonical, type, image]);
 
   return null;

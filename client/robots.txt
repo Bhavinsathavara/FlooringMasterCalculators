@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Allow all calculator pages
+Allow: /calculator/
+
+# Allow static assets
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.svg
+Allow: /*.ico
+Allow: /*.webp
+
+# Block development files
+Disallow: /src/
+Disallow: /server/
+Disallow: /*.map
+Disallow: /node_modules/
+
+# Sitemap location (self-referencing)
+Sitemap: /sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
