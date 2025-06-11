@@ -1,28 +1,43 @@
 User-agent: *
 Allow: /
 
-# Allow all calculator pages
-Allow: /calculator/
+# Allow calculator pages
+Allow: /calculator/*
 
 # Allow static assets
-Allow: /assets/
-Allow: /*.css
-Allow: /*.js
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.svg
-Allow: /*.ico
-Allow: /*.webp
+Allow: /assets/*
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.webp$
+Allow: /*.woff$
+Allow: /*.woff2$
 
-# Block development files
+# Block development and sensitive files
 Disallow: /src/
 Disallow: /server/
-Disallow: /*.map
+Disallow: /*.map$
 Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
 
-# Sitemap location (self-referencing)
-Sitemap: /sitemap.xml
+# Sitemap location
+Sitemap: https://flooringmastercalculators.netlify.app/sitemap.xml
 
-# Crawl delay
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
 Crawl-delay: 1
