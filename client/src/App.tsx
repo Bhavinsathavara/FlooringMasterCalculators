@@ -67,6 +67,9 @@ function Router() {
       <Header />
       <main className="flex-1">
         <Switch>
+          {/* Test Page */}
+          <Route path="/test" component={TestPage} />
+          
           {/* Home Page */}
           <Route path="/" component={HomePage} />
           
