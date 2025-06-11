@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LoadingOverlay from "@/components/LoadingOverlay";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 // Import components directly for reliable loading
 import HomePage from "@/pages/HomePage";
@@ -63,10 +64,11 @@ import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1">
-        <Switch>
+    <ErrorBoundary>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1">
+          <Switch>
           {/* Test Page */}
           <Route path="/test" component={TestPage} />
           
@@ -127,10 +129,11 @@ function Router() {
           
           {/* Fallback to 404 */}
           <Route component={NotFound} />
-        </Switch>
-      </main>
-      <Footer />
-    </div>
+          </Switch>
+        </main>
+        <Footer />
+      </div>
+    </ErrorBoundary>
   );
 }
 
