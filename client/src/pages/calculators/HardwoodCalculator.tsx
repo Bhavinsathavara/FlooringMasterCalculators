@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import LoadingOverlay from '@/components/LoadingOverlay';
 
 const formSchema = z.object({
   roomLength: z.number().min(0.1, 'Room length must be greater than 0'),
@@ -32,6 +33,7 @@ interface HardwoodResults {
 
 export default function HardwoodCalculator() {
   const [results, setResults] = useState<HardwoodResults | null>(null);
+  const [isCalculating, setIsCalculating] = useState(false);
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -45,7 +47,12 @@ export default function HardwoodCalculator() {
     },
   });
 
-  const onSubmit = (data: FormData) => {
+  const onSubmit = async (data: FormData) => {
+    setIsCalculating(true);
+    
+    // Simulate calculation time for demo purposes
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
     const roomArea = data.roomLength * data.roomWidth;
     const adjustedArea = roomArea * (1 + data.wastePercentage / 100);
     const boardArea = (data.boardWidth * data.boardLength) / 144; // Convert sq inches to sq feet
@@ -75,6 +82,8 @@ export default function HardwoodCalculator() {
       adhesiveNeeded,
       underlaymentNeeded,
     });
+    
+    setIsCalculating(false);
   };
 
   return (
@@ -217,16 +226,25 @@ export default function HardwoodCalculator() {
                 )}
               />
 
-              <Button type="submit" className="w-full bg-primary text-white hover:bg-blue-700">
-                Calculate Hardwood Requirements
+              <Button 
+                type="submit" 
+                className="w-full bg-primary text-white hover:bg-blue-700"
+                disabled={isCalculating}
+              >
+                {isCalculating ? 'Calculating...' : 'Calculate Hardwood Requirements'}
               </Button>
             </form>
           </Form>
         </div>
 
-        <div>
+        <div className="relative">
           <h4 className="text-lg font-semibold mb-4">Calculation Results</h4>
           <div className="space-y-4">
+            <LoadingOverlay
+              isLoading={isCalculating}
+              theme="hardwood"
+              variant="pattern"
+            />
             <Card className="bg-gray-50">
               <CardHeader>
                 <CardTitle className="text-lg">Flooring Requirements</CardTitle>

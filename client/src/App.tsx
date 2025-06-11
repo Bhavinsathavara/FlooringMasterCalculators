@@ -27,6 +27,7 @@ import RoomShapeCalculator from "@/pages/calculators/RoomShapeCalculator";
 import BambooFlooringCalculator from "@/pages/calculators/BambooFlooringCalculator";
 import SubfloorCalculator from "@/pages/calculators/SubfloorCalculator";
 import CorkFlooringCalculator from "@/pages/calculators/CorkFlooringCalculator";
+import LoadingDemoPage from "@/pages/LoadingDemoPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -60,6 +61,9 @@ function Router() {
           <Route path="/calculator/cork" component={CorkFlooringCalculator} />
           <Route path="/calculator/subfloor" component={SubfloorCalculator} />
           <Route path="/calculator/hardwood" component={HardwoodCalculator} />
+          
+          {/* Demo Pages */}
+          <Route path="/demo/loading-animations" component={LoadingDemoPage} />
           
           {/* Fallback to 404 */}
           <Route component={NotFound} />
