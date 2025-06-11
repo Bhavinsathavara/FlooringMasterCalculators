@@ -17,6 +17,7 @@ interface CalculatorProps {
   keywords?: string[];
   children: ReactNode;
   category?: 'basic' | 'materials' | 'advanced';
+  faqs?: Array<{ question: string; answer: string; }>;
 }
 
 export default function Calculator({ 
@@ -26,7 +27,8 @@ export default function Calculator({
   metaDescription, 
   keywords, 
   children,
-  category = 'basic'
+  category = 'basic',
+  faqs
 }: CalculatorProps) {
   return (
     <>
@@ -34,6 +36,10 @@ export default function Calculator({
         title={metaTitle}
         description={metaDescription}
         keywords={keywords}
+        type="calculator"
+        calculatorType={title}
+        category={category}
+        lastModified={new Date().toISOString()}
       />
       
       <div className="min-h-screen bg-gray-50 py-8">
@@ -162,6 +168,11 @@ export default function Calculator({
               </div>
             </CardContent>
           </Card>
+          
+          {/* FAQ Section */}
+          {faqs && faqs.length > 0 && (
+            <FAQSection faqs={faqs} />
+          )}
         </div>
       </div>
     </>

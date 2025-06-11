@@ -93,6 +93,24 @@ export default function HardwoodCalculator() {
       metaTitle="Hardwood Flooring Calculator - Wood Floor Calculator | FlooringCalc Pro"
       metaDescription="Professional hardwood flooring calculator. Calculate solid and engineered wood flooring materials, nails, underlayment, and finishing supplies."
       keywords={['hardwood flooring calculator', 'wood flooring calculator', 'engineered wood calculator', 'hardwood cost calculator']}
+      faqs={[
+        {
+          question: "How much waste should I add for hardwood flooring?",
+          answer: "For hardwood flooring, add 10-15% waste for straight installations and 15-20% for diagonal or complex patterns. This accounts for cuts, defects, and future repairs."
+        },
+        {
+          question: "What's the difference between nail-down and glue-down installation?",
+          answer: "Nail-down is traditional and allows for refinishing, suitable for solid wood over plywood subfloors. Glue-down provides a more stable feel, works with engineered wood, and is preferred over concrete subfloors."
+        },
+        {
+          question: "How do I calculate board feet for hardwood flooring?",
+          answer: "Board feet = (Room area + waste percentage) × 12 ÷ (board width in inches). For example, 100 sq ft room with 5\" wide boards = 240 board feet."
+        },
+        {
+          question: "Can I install hardwood flooring over radiant heat?",
+          answer: "Yes, but use engineered wood (not solid) with maximum 3/8\" thickness. Keep temperature below 85°F and use manufacturer-approved adhesives for best results."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
