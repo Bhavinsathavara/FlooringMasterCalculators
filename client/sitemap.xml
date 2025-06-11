@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://flooringmastercalculators.netlify.app/</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,49 +11,49 @@
   <!-- Basic Calculators -->
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/flooring-cost</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/square-footage</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/installation-cost</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/waste-percentage</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/material-quantity</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/labor-cost</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/room-area</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/room-shape</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -61,82 +61,71 @@
   <!-- Material Calculators -->
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/tile</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/tile-adhesive</loc>
-    <lastmod>2025-01-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://flooringmastercalculators.netlify.app/calculator/tile-grout</loc>
-    <lastmod>2025-01-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://flooringmastercalculators.netlify.app/calculator/tile-pattern</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/carpet</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/hardwood</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/vinyl</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/laminate</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/stone</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/bamboo</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/cork</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/epoxy</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/concrete</loc>
-    <lastmod>2025-01-11</lastmod>
+    <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/engineered-wood</loc>
     <lastmod>2025-01-11</lastmod>
@@ -179,8 +168,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Advanced Calculators -->
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/floating-floor-gap</loc>
     <lastmod>2025-01-11</lastmod>
@@ -253,6 +240,50 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/tile-grout</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/tile-pattern</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/moisture-barrier</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/circular-room</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/l-shaped-room</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/rectangular-room</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flooringmastercalculators.netlify.app/calculator/multi-room</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Advanced Calculators -->
   <url>
     <loc>https://flooringmastercalculators.netlify.app/calculator/baseboard</loc>
     <lastmod>2025-01-11</lastmod>
