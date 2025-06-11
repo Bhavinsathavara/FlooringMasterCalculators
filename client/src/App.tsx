@@ -28,6 +28,11 @@ import BambooFlooringCalculator from "@/pages/calculators/BambooFlooringCalculat
 import SubfloorCalculator from "@/pages/calculators/SubfloorCalculator";
 import CorkFlooringCalculator from "@/pages/calculators/CorkFlooringCalculator";
 import LoadingDemoPage from "@/pages/LoadingDemoPage";
+import EngineeredWoodCalculator from "@/pages/calculators/EngineeredWoodCalculator";
+import SheetVinylCalculator from "@/pages/calculators/SheetVinylCalculator";
+import LinoleumCalculator from "@/pages/calculators/LinoleumCalculator";
+import AreaRugCalculator from "@/pages/calculators/AreaRugCalculator";
+import GarageFloorCalculator from "@/pages/calculators/GarageFloorCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -61,6 +66,11 @@ function Router() {
           <Route path="/calculator/cork" component={CorkFlooringCalculator} />
           <Route path="/calculator/subfloor" component={SubfloorCalculator} />
           <Route path="/calculator/hardwood" component={HardwoodCalculator} />
+          <Route path="/calculator/engineered-wood" component={EngineeredWoodCalculator} />
+          <Route path="/calculator/sheet-vinyl" component={SheetVinylCalculator} />
+          <Route path="/calculator/linoleum" component={LinoleumCalculator} />
+          <Route path="/calculator/area-rug" component={AreaRugCalculator} />
+          <Route path="/calculator/garage-floor" component={GarageFloorCalculator} />
           
           {/* Demo Pages */}
           <Route path="/demo/loading-animations" component={LoadingDemoPage} />
