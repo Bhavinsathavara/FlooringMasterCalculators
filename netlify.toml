@@ -1,6 +1,6 @@
 [build]
   publish = "dist/public"
-  command = "vite build && node build-netlify.js"
+  command = "vite build && ./build-netlify.sh"
 
 [build.environment]
   NODE_VERSION = "18"

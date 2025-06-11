@@ -1,0 +1,89 @@
+The Netlify deploy errored, with the following guidance provided:
+
+### Diagnosis
+[line 68](#L68): The build failed with a non-zero exit code: 2 due to an error in the build script. Specifically, there is a ReferenceError in the file "build-netlify.js" stating "require is not defined in ES module scope."
+
+### Solution
+1. Update the "build-netlify.js" file to use `import` instead of `require` since the file is being treated as an ES module.
+2. Verify that the package containing the necessary modules is in the `package.json` file or was committed to the repository.
+
+By updating the file to use `import` and verifying the package, you should be able to resolve the ES module scope error in the build script.
+
+The relevant error logs are:
+
+Line 0: build-image version: 235a96ed6c11cbdf942eed7e70e6802956f9b464 (noble)
+Line 1: buildbot version: 081aea31e9b40ca9fba15d336db2af5bf226caaf
+Line 2: Fetching cached dependencies
+Line 3: Failed to fetch cache, continuing with build
+Line 4: Starting to prepare the repo for build
+Line 5: No cached dependencies found. Cloning fresh repo
+Line 6: git clone --filter=blob:none https://github.com/Bhavinsathavara/FlooringMasterCalculators
+Line 7: Preparing Git Reference refs/heads/main
+Line 8: Starting to install dependencies
+Line 9: Python version set to 3.13.3
+Line 10: Ruby version set to 3.4.3
+Line 11: Go version set to 1.24.3
+Line 12: Using PHP version 8.3
+Line 13: Downloading and installing node v18.20.8...
+Line 58: [96m[1mbuild.command from netlify.toml                               [22m[39m
+Line 59: [96m[1m────────────────────────────────────────────────────────────────[22m[39m
+Line 60: ​
+Line 61: [36m$ vite build && node build-netlify.js[39m
+Line 62: [36mvite v5.4.14 [32mbuilding for production...[36m[39m
+Line 63: transforming...
+Line 64: Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+Line 65:   npx update-browserslist-db@latest
+Line 66:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Line 67: [32m✓[39m 1744 modules transformed.
+Line 68: Failed during stage 'building site': Build script returned non-zero exit code: 2
+Line 69: rendering chunks...
+Line 70: computing gzip size...
+Line 71: [2m../dist/public/[22m[32mindex.html                   [39m[1m[2m  2.96 kB[22m[1m[22m[2m │ gzip:   1.14 kB[22m
+Line 72: [2m../dist/public/[22m[2massets/[22m[32msitemap-BzKH7hu7.xml  [39m[1m[2m  4.59 kB[22m[1m[22m[2m │ gzip:   0.46 kB[2
+Line 73: [2m../dist/public/[22m[2massets/[22m[35mindex-Cnx-b0Bv.css    [39m[1m[2m 66.48 kB[22m[1m[22m[2m │ gzip:  11.60 kB[2
+Line 74: [2m../dist/public/[22m[2massets/[22m[36mindex-BeyzTPU0.js     [39m[1m[33m703.40 kB[39m[22m[2m │ gzip: 171.89 kB[22m
+Line 75: [33m
+Line 76: (!) Some chunks are larger than 500 kB after minification. Consider:
+Line 77: - Using dynamic import() to code-split the application
+Line 78: - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchun
+Line 79: - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Line 80: [32m✓ built in 4.71s[39m
+Line 81: file:///opt/build/repo/build-netlify.js:1
+Line 82: const fs = require('fs');
+Line 83:            ^
+Line 84: ReferenceError: require is not defined in ES module scope, you can use import instead
+Line 85: This file is being treated as an ES module because it has a '.js' file extension and '/opt/build/repo/package.json' contains "ty
+Line 86:     at [90mfile:///opt/build/repo/[39mbuild-netlify.js:1:12
+Line 87: [90m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+Line 88: [90m    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)[39m
+Line 89: [90m    at async loadESM (node:internal/process/esm_loader:34:7)[39m
+Line 90: [90m    at async handleMainPromise (node:internal/modules/run_main:106:12)[39m
+Line 91: Node.js v18.20.8
+Line 92: [91m[1m​[22m[39m
+Line 93: [91m[1m"build.command" failed                                        [22m[39m
+Line 94: [91m[1m────────────────────────────────────────────────────────────────[22m[39m
+Line 95: ​
+Line 96:   [31m[1mError message[22m[39m
+Line 97:   Command failed with exit code 1: vite build && node build-netlify.js
+Line 98: ​
+Line 99:   [31m[1mError location[22m[39m
+Line 100:   In build.command from netlify.toml:
+Line 101:   vite build && node build-netlify.js
+Line 102: ​
+Line 103:   [31m[1mResolved config[22m[39m
+Line 104:   build:
+Line 105:     command: vite build && node build-netlify.js
+Line 106:     commandOrigin: config
+Line 107:     environment:
+Line 108:       - NODE_VERSION
+Line 109:     publish: /opt/build/repo/dist/public
+Line 110:     publishOrigin: config
+Line 111:   headers:
+Line 112:     - for: /*
+      values:
+        Referrer-Policy: strict-origin-when-cross-origin
+        X-Content-Type-Options: nosniff
+   
+Line 113: Build failed due to a user error: Build script returned non-zero exit code: 2
+Line 114: Failing build: Failed to build site
+Line 115: Finished processing build request in 21.59s
