@@ -40,6 +40,15 @@ export default function SEOHead({
     }
     metaDescription.setAttribute('content', description);
 
+    // Add Google Search Console verification
+    let googleVerification = document.querySelector('meta[name="google-site-verification"]');
+    if (!googleVerification) {
+      googleVerification = document.createElement('meta');
+      googleVerification.setAttribute('name', 'google-site-verification');
+      googleVerification.setAttribute('content', 'iiJTnXL1gWBMyF8koi9VSC1pOELmTvuu4IJRR_-snkE');
+      document.head.appendChild(googleVerification);
+    }
+
     // Update meta keywords
     if (keywords && keywords.length > 0) {
       let metaKeywords = document.querySelector('meta[name="keywords"]');
