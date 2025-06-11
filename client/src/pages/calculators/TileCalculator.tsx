@@ -47,6 +47,24 @@ export default function TileCalculator() {
       metaTitle="Tile Calculator - Tiles, Grout & Adhesive Calculator | FlooringCalc Pro"
       metaDescription="Professional tile calculator for ceramic, porcelain, and stone tiles. Calculate tiles needed, grout, and adhesive quantities with pattern support."
       keywords={['tile calculator', 'ceramic tile calculator', 'tile grout calculator', 'tile adhesive calculator', 'tile pattern calculator']}
+      faqs={[
+        {
+          question: "How do I calculate tiles needed for a room?",
+          answer: "Calculate room area in square feet, add 10-15% waste allowance, then divide by individual tile area. Always round up to the nearest whole tile and order extra for future repairs."
+        },
+        {
+          question: "What grout spacing should I use for different tile sizes?",
+          answer: "Small tiles (under 6\"): 1/16\" to 1/8\" spacing. Medium tiles (6-12\"): 1/8\" to 3/16\" spacing. Large tiles (over 12\"): 3/16\" to 1/4\" spacing. Rectified tiles can use minimal spacing."
+        },
+        {
+          question: "How much tile adhesive do I need?",
+          answer: "Coverage varies by trowel size and tile type. Generally, expect 50-60 sq ft per gallon for wall tiles and 40-50 sq ft per gallon for floor tiles with proper trowel technique."
+        },
+        {
+          question: "Should I start tiling from the center of the room?",
+          answer: "Yes, find the center point and work outward. This ensures balanced borders and prevents small slivers at edges. Use chalk lines to establish your starting grid."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

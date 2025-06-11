@@ -200,6 +200,24 @@ export default function CarpetCalculator() {
       metaTitle="Carpet Calculator - Carpet & Padding Calculator | FlooringCalc Pro"
       metaDescription="Calculate carpet requirements including padding, tack strips, and installation materials. Professional carpet flooring calculator."
       keywords={['carpet calculator', 'carpet flooring calculator', 'carpet padding calculator', 'carpet installation calculator']}
+      faqs={[
+        {
+          question: "How much carpet padding do I need?",
+          answer: "Use 8-pound density padding for most residential applications. Calculate the same square footage as your carpet. High-traffic areas benefit from 10-pound padding for better durability and comfort."
+        },
+        {
+          question: "What direction should carpet seams run?",
+          answer: "Run seams parallel to the longest wall and away from main light sources. Seams should be positioned in low-traffic areas and never in doorways or high-visibility zones."
+        },
+        {
+          question: "How much extra carpet should I order?",
+          answer: "Order 10-15% extra for waste, future repairs, and matching dye lots. Complex rooms or patterned carpets may require 15-20% additional material for proper pattern matching."
+        },
+        {
+          question: "Can I install carpet over existing flooring?",
+          answer: "Remove existing hard flooring first. You can install over old carpet in basement applications, but it's not recommended for main living areas due to height and padding issues."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

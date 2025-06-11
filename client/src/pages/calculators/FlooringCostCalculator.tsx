@@ -58,6 +58,24 @@ export default function FlooringCostCalculator() {
       metaTitle="Flooring Cost Calculator - Free Professional Tool | FlooringCalc Pro"
       metaDescription="Calculate accurate flooring costs including materials, labor, and waste. Professional-grade calculator for contractors and homeowners. Get instant estimates."
       keywords={['flooring cost calculator', 'flooring price estimator', 'flooring budget calculator', 'flooring installation cost']}
+      faqs={[
+        {
+          question: "How much does flooring installation typically cost?",
+          answer: "Installation costs vary by material: Carpet $1-4/sq ft, Hardwood $4-8/sq ft, Tile $5-10/sq ft, Vinyl $2-5/sq ft, Laminate $2-6/sq ft. Complex patterns and subfloor prep increase costs."
+        },
+        {
+          question: "What additional costs should I budget for?",
+          answer: "Include underlayment ($0.50-2/sq ft), transitions ($15-50 each), quarter round molding ($1-3/linear ft), subfloor repairs, and disposal fees. Add 10-20% contingency for unexpected issues."
+        },
+        {
+          question: "How do I get accurate labor estimates?",
+          answer: "Get quotes from 3+ licensed contractors. Prices vary by region, complexity, and contractor experience. Include removal of existing flooring, subfloor prep, and cleanup in estimates."
+        },
+        {
+          question: "When is DIY flooring installation worth it?",
+          answer: "DIY saves 50-70% on labor for floating floors (laminate, LVP). Consider professional installation for tile, hardwood, or rooms with complex layouts requiring specialized tools and experience."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

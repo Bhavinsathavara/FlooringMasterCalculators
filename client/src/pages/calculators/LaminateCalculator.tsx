@@ -163,6 +163,24 @@ export default function LaminateCalculator() {
       metaTitle="Laminate Flooring Calculator - Laminate Plank Calculator | FlooringCalc Pro"
       metaDescription="Calculate laminate flooring materials including planks, underlayment, and transitions. Professional laminate flooring calculator."
       keywords={['laminate flooring calculator', 'laminate plank calculator', 'laminate installation calculator', 'floating floor calculator']}
+      faqs={[
+        {
+          question: "What thickness laminate flooring should I choose?",
+          answer: "8mm: Budget-friendly for low traffic areas. 10mm: Standard residential choice with good durability. 12mm: Premium option with better sound dampening and feel underfoot."
+        },
+        {
+          question: "Do I need underlayment for laminate flooring?",
+          answer: "Yes, unless the laminate has attached underlayment. Use foam for basic cushioning, cork for sound reduction, or combination underlayment for moisture protection over concrete."
+        },
+        {
+          question: "Can laminate flooring get wet?",
+          answer: "Traditional laminate is not waterproof - avoid in bathrooms and laundry rooms. Waterproof laminate with sealed cores can handle moisture but still needs proper installation and sealing."
+        },
+        {
+          question: "How do I calculate expansion gaps for laminate?",
+          answer: "Leave 1/4\" gaps around room perimeter and obstacles. For rooms over 26 feet in any direction, add transition strips to accommodate seasonal expansion and contraction."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>

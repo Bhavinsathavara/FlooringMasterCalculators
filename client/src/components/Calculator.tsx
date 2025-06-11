@@ -42,6 +42,14 @@ export default function Calculator({
         lastModified={new Date().toISOString()}
       />
       
+      <StructuredData 
+        type="calculator"
+        title={title}
+        description={description}
+        calculatorType={title}
+        category={category}
+      />
+      
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb Navigation */}

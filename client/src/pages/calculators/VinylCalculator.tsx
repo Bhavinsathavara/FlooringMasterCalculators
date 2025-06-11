@@ -199,6 +199,24 @@ export default function VinylCalculator() {
       metaDescription="Calculate vinyl flooring materials including LVP, LVT, WPC, SPC, and sheet vinyl. Professional vinyl flooring calculator."
       keywords={['vinyl flooring calculator', 'lvp calculator', 'lvt calculator', 'luxury vinyl plank calculator']}
       category="materials"
+      faqs={[
+        {
+          question: "What's the difference between LVP and LVT?",
+          answer: "LVP (Luxury Vinyl Plank) mimics wood with plank shapes, while LVT (Luxury Vinyl Tile) replicates stone/ceramic in tile formats. Both offer waterproof cores and click-lock installation options."
+        },
+        {
+          question: "Do I need underlayment with vinyl flooring?",
+          answer: "Click-lock vinyl often includes attached underlayment. Glue-down vinyl over concrete needs moisture barrier. Sheet vinyl typically doesn't require additional underlayment if subfloor is smooth."
+        },
+        {
+          question: "Can vinyl flooring go over existing floors?",
+          answer: "Yes, vinyl can install over most existing hard surfaces if they're level, clean, and structurally sound. Remove carpet and ensure no more than 1/8\" height variations over 6 feet."
+        },
+        {
+          question: "How thick should luxury vinyl flooring be?",
+          answer: "Residential: 4-6mm for light traffic, 6-8mm for heavy traffic. Commercial: 8-12mm minimum. Thicker wear layers (20+ mil) provide better durability and longer warranties."
+        }
+      ]}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
