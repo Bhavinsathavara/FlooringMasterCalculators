@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import SEOHead from './SEOHead';
 import Breadcrumb from './Breadcrumb';
+import SEOBreadcrumb from './SEOBreadcrumb';
+import FAQSection from './FAQSection';
 import LoadingOverlay from './LoadingOverlay';
 import { calculators, getCalculatorsByCategory } from '@/lib/calculatorData';
 

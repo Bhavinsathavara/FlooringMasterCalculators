@@ -1,15 +1,29 @@
 import { useEffect } from 'react';
+import StructuredData from './StructuredData';
 
 interface SEOHeadProps {
   title: string;
   description: string;
   keywords?: string[];
   canonical?: string;
-  type?: 'website' | 'article';
+  type?: 'website' | 'article' | 'calculator';
   image?: string;
+  calculatorType?: string;
+  category?: string;
+  lastModified?: string;
 }
 
-export default function SEOHead({ title, description, keywords, canonical, type = 'website', image }: SEOHeadProps) {
+export default function SEOHead({ 
+  title, 
+  description, 
+  keywords, 
+  canonical, 
+  type = 'website', 
+  image,
+  calculatorType,
+  category,
+  lastModified 
+}: SEOHeadProps) {
   useEffect(() => {
     // Determine canonical URL early - self-referencing
     const canonicalUrl = canonical || `${window.location.origin}${window.location.pathname}`;
@@ -202,7 +216,40 @@ export default function SEOHead({ title, description, keywords, canonical, type 
       document.title = title;
     }
 
-  }, [title, description, keywords, canonical, type, image]);
+    // Add enhanced meta tags for better SEO
+    const enhancedMetas = [
+      { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { name: 'googlebot', content: 'index, follow' },
+      { name: 'author', content: 'FlooringCalc Pro' },
+      { name: 'theme-color', content: '#3B82F6' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'format-detection', content: 'telephone=no' },
+    ];
 
-  return null;
+    if (lastModified) {
+      enhancedMetas.push({ name: 'last-modified', content: lastModified });
+    }
+
+    enhancedMetas.forEach(meta => {
+      let metaTag = document.querySelector(`meta[name="${meta.name}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('name', meta.name);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.setAttribute('content', meta.content);
+    });
+
+  }, [title, description, keywords, canonical, type, image, lastModified]);
+
+  return (
+    <StructuredData
+      type={type}
+      title={title}
+      description={description}
+      url={canonical}
+      calculatorType={calculatorType}
+      category={category}
+    />
+  );
 }
