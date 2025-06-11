@@ -92,6 +92,13 @@ function Router() {
           <Route path="/calculator/floor-leveling" component={UnlevelFloorCalculator} />
           <Route path="/calculator/radiant-heating" component={RadiantHeatingCalculator} />
           <Route path="/calculator/acoustic-underlayment" component={AcousticUnderlaymentCalculator} />
+          <Route path="/calculator/transition-strips" component={TransitionStripCalculator} />
+          <Route path="/calculator/floor-repair" component={FloorRepairCalculator} />
+          <Route path="/calculator/molding" component={MoldingCalculator} />
+          <Route path="/calculator/hvac-registers" component={HVACFloorRegisterCalculator} />
+          <Route path="/calculator/floor-joists" component={FloorJoistCalculator} />
+          <Route path="/calculator/floor-finishing" component={FloorFinishingCalculator} />
+          <Route path="/calculator/floor-load" component={FloorLoadCalculator} />
           
           {/* Demo Pages */}
           <Route path="/demo/loading-animations" component={LoadingDemoPage} />
