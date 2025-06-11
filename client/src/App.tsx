@@ -49,6 +49,11 @@ import FloorFinishingCalculator from "@/pages/calculators/FloorFinishingCalculat
 import FloorLoadCalculator from "@/pages/calculators/FloorLoadCalculator";
 import TileGroutCalculator from "@/pages/calculators/TileGroutCalculator";
 import TilePatternCalculator from "@/pages/calculators/TilePatternCalculator";
+import MoistureBarrierCalculator from "@/pages/calculators/MoistureBarrierCalculator";
+import CircularRoomCalculator from "@/pages/calculators/CircularRoomCalculator";
+import LShapedRoomCalculator from "@/pages/calculators/LShapedRoomCalculator";
+import RectangularRoomCalculator from "@/pages/calculators/RectangularRoomCalculator";
+import MultiRoomCalculator from "@/pages/calculators/MultiRoomCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -103,6 +108,11 @@ function Router() {
           <Route path="/calculator/floor-load" component={FloorLoadCalculator} />
           <Route path="/calculator/tile-grout" component={TileGroutCalculator} />
           <Route path="/calculator/tile-pattern" component={TilePatternCalculator} />
+          <Route path="/calculator/moisture-barrier" component={MoistureBarrierCalculator} />
+          <Route path="/calculator/circular-room" component={CircularRoomCalculator} />
+          <Route path="/calculator/l-shaped-room" component={LShapedRoomCalculator} />
+          <Route path="/calculator/rectangular-room" component={RectangularRoomCalculator} />
+          <Route path="/calculator/multi-room" component={MultiRoomCalculator} />
           
           {/* Demo Pages */}
           <Route path="/demo/loading-animations" component={LoadingDemoPage} />
