@@ -5,9 +5,11 @@ interface SEOHeadProps {
   description: string;
   keywords?: string[];
   canonical?: string;
+  type?: 'website' | 'article';
+  image?: string;
 }
 
-export default function SEOHead({ title, description, keywords, canonical }: SEOHeadProps) {
+export default function SEOHead({ title, description, keywords, canonical, type = 'website', image }: SEOHeadProps) {
   useEffect(() => {
     // Determine canonical URL early - self-referencing
     const canonicalUrl = canonical || `${window.location.origin}${window.location.pathname}`;
@@ -68,7 +70,7 @@ export default function SEOHead({ title, description, keywords, canonical }: SEO
       ogType.setAttribute('property', 'og:type');
       document.head.appendChild(ogType);
     }
-    ogType.setAttribute('content', 'website');
+    ogType.setAttribute('content', type);
 
     // Update og:site_name
     let ogSiteName = document.querySelector('meta[property="og:site_name"]');
@@ -122,7 +124,62 @@ export default function SEOHead({ title, description, keywords, canonical }: SEO
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute('href', canonicalUrl);
-  }, [title, description, keywords, canonical]);
+
+    // Add JSON-LD structured data
+    let existingScript = document.querySelector('script[type="application/ld+json"]');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": type === 'article' ? 'Article' : 'WebPage',
+      "name": title,
+      "description": description,
+      "url": canonicalUrl,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalUrl
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Flooring Master Calculators",
+        "url": window.location.origin
+      }
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+
+    // Add viewport meta if missing
+    let viewport = document.querySelector('meta[name="viewport"]');
+    if (!viewport) {
+      viewport = document.createElement('meta');
+      viewport.setAttribute('name', 'viewport');
+      viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+      document.head.appendChild(viewport);
+    }
+
+    // Add charset meta if missing
+    let charset = document.querySelector('meta[charset]');
+    if (!charset) {
+      charset = document.createElement('meta');
+      charset.setAttribute('charset', 'UTF-8');
+      document.head.prepend(charset);
+    }
+
+    // Add robots meta
+    let robots = document.querySelector('meta[name="robots"]');
+    if (!robots) {
+      robots = document.createElement('meta');
+      robots.setAttribute('name', 'robots');
+      robots.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+      document.head.appendChild(robots);
+    }
+
+  }, [title, description, keywords, canonical, type, image]);
 
   return null;
 }
