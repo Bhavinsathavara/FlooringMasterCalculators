@@ -1,4 +1,4 @@
-import { Switch, Route, useLocation } from "wouter";
+import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -69,8 +69,8 @@ function Router() {
         <Header />
         <main className="flex-1">
           <Switch>
-          {/* Test Page */}
-          <Route path="/test" component={TestPage} />
+            {/* Test Page */}
+            <Route path="/test" component={TestPage} />
           
           {/* Home Page */}
           <Route path="/" component={HomePage} />
@@ -127,8 +127,8 @@ function Router() {
           {/* Demo Pages */}
           <Route path="/demo/loading-animations" component={LoadingDemoPage} />
           
-          {/* Fallback to 404 */}
-          <Route component={NotFound} />
+            {/* Fallback to 404 */}
+            <Route component={NotFound} />
           </Switch>
         </main>
         <Footer />
