@@ -47,6 +47,8 @@ import HVACFloorRegisterCalculator from "@/pages/calculators/HVACFloorRegisterCa
 import FloorJoistCalculator from "@/pages/calculators/FloorJoistCalculator";
 import FloorFinishingCalculator from "@/pages/calculators/FloorFinishingCalculator";
 import FloorLoadCalculator from "@/pages/calculators/FloorLoadCalculator";
+import TileGroutCalculator from "@/pages/calculators/TileGroutCalculator";
+import TilePatternCalculator from "@/pages/calculators/TilePatternCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -99,6 +101,8 @@ function Router() {
           <Route path="/calculator/floor-joists" component={FloorJoistCalculator} />
           <Route path="/calculator/floor-finishing" component={FloorFinishingCalculator} />
           <Route path="/calculator/floor-load" component={FloorLoadCalculator} />
+          <Route path="/calculator/tile-grout" component={TileGroutCalculator} />
+          <Route path="/calculator/tile-pattern" component={TilePatternCalculator} />
           
           {/* Demo Pages */}
           <Route path="/demo/loading-animations" component={LoadingDemoPage} />
