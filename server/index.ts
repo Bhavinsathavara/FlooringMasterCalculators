@@ -6,6 +6,34 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Serve static files before other middleware
+import path from "path";
+import fs from "fs";
+
+// Serve sitemap.xml from root
+app.get('/sitemap.xml', (req, res) => {
+  const sitemapPath = path.join(process.cwd(), 'sitemap.xml');
+  
+  if (fs.existsSync(sitemapPath)) {
+    res.set('Content-Type', 'application/xml');
+    res.sendFile(sitemapPath);
+  } else {
+    res.status(404).send('Sitemap not found');
+  }
+});
+
+// Serve robots.txt from root
+app.get('/robots.txt', (req, res) => {
+  const robotsPath = path.join(process.cwd(), 'robots.txt');
+  
+  if (fs.existsSync(robotsPath)) {
+    res.set('Content-Type', 'text/plain');
+    res.sendFile(robotsPath);
+  } else {
+    res.status(404).send('Robots.txt not found');
+  }
+});
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
