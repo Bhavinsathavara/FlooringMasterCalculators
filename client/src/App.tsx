@@ -40,6 +40,13 @@ import StairCalculator from "@/pages/calculators/StairCalculator";
 import UnlevelFloorCalculator from "@/pages/calculators/UnlevelFloorCalculator";
 import RadiantHeatingCalculator from "@/pages/calculators/RadiantHeatingCalculator";
 import AcousticUnderlaymentCalculator from "@/pages/calculators/AcousticUnderlaymentCalculator";
+import TransitionStripCalculator from "@/pages/calculators/TransitionStripCalculator";
+import FloorRepairCalculator from "@/pages/calculators/FloorRepairCalculator";
+import MoldingCalculator from "@/pages/calculators/MoldingCalculator";
+import HVACFloorRegisterCalculator from "@/pages/calculators/HVACFloorRegisterCalculator";
+import FloorJoistCalculator from "@/pages/calculators/FloorJoistCalculator";
+import FloorFinishingCalculator from "@/pages/calculators/FloorFinishingCalculator";
+import FloorLoadCalculator from "@/pages/calculators/FloorLoadCalculator";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -81,6 +88,10 @@ function Router() {
           <Route path="/calculator/rubber-flooring" component={RubberFlooringCalculator} />
           <Route path="/calculator/parquet" component={ParquetLayoutCalculator} />
           <Route path="/calculator/floating-floor-gap" component={FloatingFloorGapCalculator} />
+          <Route path="/calculator/stairs" component={StairCalculator} />
+          <Route path="/calculator/floor-leveling" component={UnlevelFloorCalculator} />
+          <Route path="/calculator/radiant-heating" component={RadiantHeatingCalculator} />
+          <Route path="/calculator/acoustic-underlayment" component={AcousticUnderlaymentCalculator} />
           
           {/* Demo Pages */}
           <Route path="/demo/loading-animations" component={LoadingDemoPage} />
