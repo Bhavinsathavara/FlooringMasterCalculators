@@ -1,9 +1,10 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import { Link } from 'wouter';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import SEOHead from './SEOHead';
 import Breadcrumb from './Breadcrumb';
+import LoadingOverlay from './LoadingOverlay';
 import { calculators, getCalculatorsByCategory } from '@/lib/calculatorData';
 
 interface CalculatorProps {
